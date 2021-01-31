@@ -1,0 +1,68 @@
+{
+  "name": "school-of-code-tdd",
+  "version": "0.0.1",
+  "description": "Examples of TDD problem solving in node.js for School of Code",
+  "main": "src/example_one/example_1.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shoddyknight/school-of-code-TDD.git"
+  },
+  "keywords": [
+    "test-driven-development",
+    "learning"
+  ],
+  "author": "Tim Knight",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/shoddyknight/school-of-code-TDD/issues"
+  },
+  "homepage": "https://github.com/shoddyknight/school-of-code-TDD#readme",
+  "dependencies": {
+    "@travel-cloud/simple-lambda-logger": "^2.0.1",
+    "core-js": "^3.6.5",
+    "regenerator-runtime": "^0.13.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.0.1",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jest": "^23.13.2",
+    "jest": "^26.0.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/env",
+        {
+          "targets": {
+            "node": "10"
+          },
+          "useBuiltIns": "usage",
+          "corejs": "3.6.4"
+        }
+      ]
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "jest": true,
+      "node": true
+    },
+    "extends": "airbnb-base",
+    "plugins": [
+      "import",
+      "jest"
+    ],
+    "rules": {
+      "eqeqeq": "off"
+    }
+  }
+}
